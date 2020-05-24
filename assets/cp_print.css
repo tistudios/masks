@@ -1,0 +1,97 @@
+/* ------------------------------------------------------------------------------
+Print Style Sheet for BWS 
+
+Last Modified: Jan. 13, 2009
+
+version: 1.1
+author: Pete Kasper
+email: pete.kasper@sympatico.ca
+
+
+@charset "utf-8";
+/* CSS Document */
+
+
+body * {color: #000 !important; background: none !important; border-color: #000000 !important; /*position: static !important; overflow: visible !important;*/  font-size: 1em;}
+
+#wrapper {width: auto;}
+
+body, #region1, #region2, #region3, #region4, #main, #content, .section, .sectionBorder, .columnSection, .contents, #footer, #region5, #region6, #region7, #region8, .region9, .region10, .region11, #tabs, #tabContent, .halfSection, .tip, .tipContent,
+.message code, .shadow, .toastHolder, #map, .columnFloat, .borderOutline, .tips, .sectionGradient, #nowYouCan, #dashBannerContainer, #marquee, #verticalTabsSpotlight, #verticalTabsContent {
+  float: none !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#footerContent, #footerSilver {background: none;}
+
+#siteLinks, #skipNav, #region1, #region1b, #cpid, #headerInSection, #headerMainNav, #globalNavA, #dashboardTabs, #regionContents, span.icon, .siteSwitch, .banner, .widget, .signIn, #verticalTabsOptions {display: none !important;}
+.sectionTitle, .sectionBorder, #accordion, #main, .toolBorder, .elegantTitle, .message, .columnSection {padding: 0; margin: 0; border: none !important; color: #000 !important;}
+
+.sideBar {width: auto; border: none !important;}
+#whereToBuy {float: none; padding: 0 !important; margin: 0 !important; background: none;}
+
+fieldset {border: 1px solid #000;}
+
+a:link, a:visited {
+   color: #520;
+   background: transparent;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+a[href]:after {
+  content: none !important;
+}
+
+#featuredItem {text-align: left;}
+.banner {display: none;}
+
+ul, ol {float: none !important; margin: auto; padding: inherit;}
+
+dl {display: block; float: none !important; width: auto;}
+
+.floatRight, .floatLeft, .right, .left {float: none !important; display: block;}
+.last {float: left !important;}
+
+.printOnly {display: block;}
+
+
+/* START OF - Find a Post Office Location */
+.forPrint_googleMap .search-bar, .forPrint_googleMap dl.tabs, .forPrint_googleMap #main { display:none;}
+
+.forPrint_googleMap #contentWrap #resultContents.tabs-content,
+.forPrint_googleMap #map_canvas { 
+    position:absolute;
+    margin-left:-1000px;
+}
+
+.forPrint_googleMap #map_canvasPrint {
+    height: 400px;
+    width: 700px;	
+    position:relative;
+    margin-left:15px;
+    overflow:hidden !important;
+}
+
+.forPrint_googleMap #map_canvasPrint .gm-style-cc, #mapOfAll .gm-style-cc {
+    display:none;
+}
+
+.forPrint_googleMap .psage-break  {
+    display: block; page-break-before: always;
+}
+
+#topSiteMessageWrapper.warn {
+    position:absolute;
+    left:-1000px;  
+}
+/* END OF - Find a Post Office Location */
+
+
+.footer-containerBlue, footer, header{display:none;}
+.button{border:1px solid black;}
+
+#feedback-tab{display:none !important;}
